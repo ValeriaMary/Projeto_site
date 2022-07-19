@@ -122,6 +122,10 @@ input.btn:hover{
 	font-size: 28px;
 	z-index: 99;
 } 
+.divisor {
+	width: 2px;
+	background: white;
+}
  /* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
 
