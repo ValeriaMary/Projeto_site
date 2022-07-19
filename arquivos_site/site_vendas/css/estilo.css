@@ -68,7 +68,7 @@ footer{
 	font-weight: 100;
 	width: 100%;
 }
- h2, h3, h4, h5, h6{
+ h2, h3, h4, h5{
 	font-weight: 500;
 	margin: 15px 0 10px 0;
 	color: #8f2424;
@@ -125,6 +125,7 @@ input.btn:hover{
 .divisor {
 	width: 2px;
 	background: white;
+	margin: 12px 15px;
 }
  /* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
