@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Site Vendas</title>
+    <link rel="icon" href="imagens/logo.jpeg">
+  </head>
+  <body>
+    <header> <!--Início cabecalho -->
+         <nav class="navbar fixed-top navbar-light bg-light">
+          <div class="container">
+            <a href="index.html" class="navbar-brand d-none d-md-block"><img src="imagens/logo.jpeg" width="60"></a> 
+
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Pesquisar">
+            <button class="btn btn-light my-2 my-sm-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-light my-2 my-sm-0" type="submit">
+              <i class="fa-solid fa-user"></i>Perfil
+            </button>
+            <button class="btn btn-light my-sm-0" type="submit">
+              <i class="fa-solid fa-cart-shopping"></i>Carrinho
+            </button>
+          </form>
+          </div>
+        </nav> 
+      </header>
+        
+      <section>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #ebebeb;">
+          <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" style=" color:#8f2424;  margin-top: 100px;"> 
+              <i class="fa-solid fa-bars"></i> 
+            </button>
+  
+            <div class="collapse navbar-collapse" id="nav-principal">
+              <ul class="navbar-nav align-self-center" >
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="novidades.html" class="nav-link">Novidades</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Feminino
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Vestidos</a>
+                    <a class="dropdown-item" href="#">Calças Jeans</a>
+                    <a class="dropdown-item" href="#">Bolsas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">T-shirt</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Masculino
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Camisas</a>
+                    <a class="dropdown-item" href="#">Calças Jeans</a>
+                    <a class="dropdown-item" href="#">Sapatos</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Ternos</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link">Infantil</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Promoções
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Vestidos</a>
+                    <a class="dropdown-item" href="#">Bolsas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Calças Jeans</a>
+                  </div>
+                </li>
+               </ul> 
+            </div>
+          </div>
+        </nav>
+      </section>
+        
+      <!--Fim cabeçalho-->
+
+      <section id="home">
+        <!-- Inicio da seção home -->
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-md-12 m-auto d-none d-md-block"> -->
+           <div class="col-md-12 m-auto d-md-block"> 
+  
+            <div id="carousel-indicadores" class="carousel slide" data-ride="carousel"><!-- Carosel -->
+  
+              <!-- Indicadores -->
+              <ol class="carousel-indicators">
+  
+                <li data-target="#carousel-indicadores" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-indicadores" data-slide-to="1"></li>
+                <li data-target="#carousel-indicadores" data-slide-to="2"></li>
+                
+              </ol>
+  
+              <div class="carousel-inner"><!-- Inner -->
+  
+                <div class="carousel-item active">
+                  <img src="imagens/mulher_mesa.jpg" class="img-fluid">
+                  <div class="carousel-caption d-none d-md-block">
+                   <div style="color: #8f2424; float: right; margin-bottom: 160px; margin-right: -80px;">
+                      <h2><em>Peças com 50% de desconto</em></h2> <br> 
+                      <h4 style="color: gray;">Look para elas</h4>
+
+                     </div>
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <img src="imagens/manequim.jpg" class="img-fluid">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div style="color: #ff4500; float: left; margin-bottom: 50px; margin-right: 50px; 
+                    text-shadow: 1px 1px black;">
+                       <h3><em>Conforto e Elegância</em></h3>
+                    </div>
+                   </div>
+                  
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imagens/promocao.jpg" class="img-fluid">
+                    <div class="carousel-caption d-none d-md-block">
+                      <div style="color: #8f2424; float: right; margin-bottom: 100px; margin-right: -80px;">
+                         <h1>Coleção <br> Inverno 22</h1> <br>
+                         <a href="" class="btn btn-lg btn-custom btn-branco">Aproveite a promoção</a>
+                      </div>
+                     </div>  
+                  </div>
+              
+              </div><!-- Fim Inner -->
+              <!-- Controles -->
+              <a href="#carousel-indicadores" class="carousel-control-prev" data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+  
+              <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+
+              <a href="#carousel-indicadores" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+              
+            </div><!-- Fim Carosel -->
+          </div> 
+        </div> 
+      </div>
+      </section>
+        <!-- Início da sessão produtos para venda -->
+     <section class="caixa">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="imagens/roupa_amarela.jpg" class="img-fluid">
+              <h4 style="text-align: center;">Vestido Manga longa</h4>
+              <h3 style="text-align: center;">R$ 00,00</h3>
+              <a href="" class="parcela">Ou 0X de R$ 00,00sem juros</a>
+            </div>
+          <div class="col-md-3">
+            <img src="imagens/vestido_branco.jpg" class="img-fluid">
+            <h4 style="text-align: center;">Vestido Cetim branco</h4>
+              <h3 style="text-align: center;">R$ 00,00</h3>
+              <a href="" class="parcela">Ou 0X de R$ 00,00 sem juros</a>
+          </div>
+          <div class="col-md-3">
+            <img src="imagens/conjunto.jpg" class="img-fluid">
+            <h4 style="text-align: center;">Camisa longa feminina</h4>
+              <h3 style="text-align: center;">R$ 00,00</h3>
+              <a href="" class="parcela">Ou 0X de R$ 00,00 sem juros</a>
+          </div>
+          <div class="col-md-3">
+            <img src="imagens/jeans.jpg" class="img-fluid">
+            <h4 style="text-align: center;">Calça Jeans adulto</h4>
+              <h3 style="text-align: center;">R$ 00,00</h3>
+              <a class="parcela" href="#">Ou 0X de R$ 00,00 sem juros</a>
+
+          </div>
+        </div>
+        </div>
+
+      </section>
+      <!-- Fim da sessão produtos para venda -->
+
+      <!-- Início da sessão footer -->
+    <footer class="mt-4 mt-4 d-flex justify-content-end">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"><span>&copy; Copyright 2022 - Minha Marca</span></div>
+          <div class="col-md-4">
+            
+            <a href="" class="text-light ml-2"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="" class="text-light ml-2"><i class="fab fa-instagram fa-lg"></i></a>
+             <a href="" class="text-light ml-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+           </div>
+           <div class="col-md-4" id="links">
+            <a href="#">Quem Somos</a> <br>
+            <a href="#">Perguntas Frequentes</a> <br>
+            <a href="#">Meus pedidos</a> <br>
+            <a href="#">Trocas e devoluções</a>
+           </div> 
+          
+        </div>
+        
+      </div>
+      
+    </footer> <!-- Fim da sessão footer -->
+    <!-- Back to top -->
+    <a href="" id="top-link" class="animated fadeInup start-anim">
+      <i class="fas fa-angle-up"></i>    
+    </a> 
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/95a640acf9.js" crossorigin="anonymous"></script>
+  </body>
+</html>
