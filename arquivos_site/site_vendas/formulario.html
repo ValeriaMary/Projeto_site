@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Cliente</title>
+
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+
+    <title>Registro de Clientes com validações</title>
 </head>
 <body>
-    <div>
+    <div id="main-container">
         <h1>Faça seu cadastro</h1>
         <p>Complete suas informações</p>
-    </div>
 
-    <form action="">
-        <fieldset>
-            <div>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="">E-mail</label>
+                <input type="email" nome="email" id="email" placeholder="Informe seu e-mail">
+            </div>
+
+            <div class="half-box">
                 <label for="">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
             </div>
 
-            <div>
+            <div class="half-box">
                 <label for="">Sobrenome</label>
-                <input type="text" nome="sobrenome" id="sobrenome">
+                <input type="text" nome="lastname" id="lastname" placeholder="Informe seu Sobrenome">
             </div>
-        </fieldset>
 
-        <div>
-            <label for="">Email</label>
-            <input type="email" nome="email" id="email">
-        </div>
+            <div class="half-box">
+                <label for="">Senha</label>
+                <input type="password" nome="password" id="password" placeholder="Informe sua senha">
+            </div>
 
-        <div>
-            <label for="">Senha</label>
-            <input type="password" nome="senha" id="senha">
-        </div>
-    </form>
+            <div class="half-box">
+                <label for=""> Confirmar Senha</label>
+                <input type="passconfirmation" nome="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+            </div>
+
+            <div class="full-box">
+                <input type="checkbox" nome="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a> </label>
+            </div>
+
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="registrar">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    
 </body>
 </html>
