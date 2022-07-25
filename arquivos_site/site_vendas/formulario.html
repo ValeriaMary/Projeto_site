@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/formulario.css">
 
+    <script src="js/alertacadastro.js"></script>
+
     <title>Registro de Clientes com validações</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <form id="register-form">
             <div class="full-box">
                 <label for="">E-mail</label>
-                <input type="email" nome="email" id="email" placeholder="Informe seu e-mail">
+                <input type="email" nome="email" id="email" placeholder="Informe seu e-mail" data-min-length="3">
             </div>
 
             <div class="half-box spacing">
@@ -51,8 +53,6 @@
         </form>
     </div>
     <p class="error-validation template"></p>
-   
-    <script src="js/alertacadastro.js"></script>
-    
+
 </body>
 </html>
