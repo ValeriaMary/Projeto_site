@@ -3,11 +3,24 @@ class Validator{
 
     constructor(){
         this.validations = [
+            'data-required',
             'data-min-length',
+            'data-max-length',
+            'data-email-validate',
+            'data-only-letters',
+            'data-equal',
+            
         ]
     }
     //Iniciar validações de todos os campos
     validate(form){
+
+        //resgatas todas as validações
+        let currentValidations = document.querySelectorAll('form .error-validation');
+
+        if(currentValidations.length > 0){
+            this.cleanValidations(currentValidations);
+        }
 
         //Pegar os inputs
         let inputs = form.getElementsByTagName('input');
@@ -51,12 +64,58 @@ class Validator{
         }
         console.log(input);
         console.log(minValue);
+    }
+    //Verifica se o input excedeu o número de caracterer
+    maxlength(input, maxValue){
+
+        let inputLength = input.value.length;
+
+        let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
+
+        if(inputLength > maxValue){
+            this.printMessage(input, errorMessage);
+           // console.log(errorMessage);
+        }
 
     }
+
+    // Valida emails
+    emailvalidate(input){
+        
+        // email@email.com -> email@email.com.br
+        let re = /\S+@\S+\.\S+/;
+
+        let email = input.value;
+
+        let errorMessage = `Insera um email valido do tipo email@email.com`;
+
+        if(!re.test(email)){
+            this.printMessage(input, errorMessage);
+        }
+    }
+
+    // Valida se o campo tem apenas letras
+    onlyletter(input){
+
+        let re = /^[A-Za-z]+$/;
+
+        let inputValue = input.value;
+
+        let errorMessage = `Esse campo não aceita números nem caracteres especiais `
+
+        if(!re.test(inputValue)){
+            this.printMessage(input, errorMessage);
+        }
+    }
+
     //Método para imprimir mensagens de erro na tela
     printMessage(input, msg){
 
-        let template = document.querySelector('.error-validation').cloneNode(true);
+        //Quantidade de erros 
+        let errorsQty = input.parentNode.querySelector('.error-validation');
+
+        if(errorsQty === null){
+            let template = document.querySelector('.error-validation').cloneNode(true);
 
         template.textContent = msg;
 
@@ -65,7 +124,37 @@ class Validator{
         template.classList.remove('template');
 
         inputParent.appendChild(template);
+        }
 
+    }
+
+    //verifica se o input é requerido
+    required(input){
+
+        let inputValue = input.value;
+
+        if(inputValue === ''){
+            let errorMessage = `Esse campo é obrigatório`;
+
+            this.printMessage(input, errorMessage);
+        }
+    }
+
+    // Verifica se dois campos são iguais
+    equal(input, inputName){
+        
+        let inputToCompare = document.getElementsByName(inputName)[0];
+
+        let errorMessage = `Esse campo precisa ser igual ao ${inputName}`;
+
+        if(input.value != inputToCompare.value){
+            this.printMessage(input, errorMessage);
+        }
+    }
+    
+    //Limpa as validações de tela
+    cleanValidations(validations){
+        validations.forEach(el => el.remove());
     }
 }
 
