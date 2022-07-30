@@ -1,16 +1,16 @@
-html, body #home{
+html, body #home {
  height: 100% 
 }
-#nav-principal ul{
+#nav-principal ul {
 	margin-left: 300px; 
 	/* border-left: 0px;  */
 	/* background-color: #070a0e; */
 } 
-#nav-principal ul li a{
+#nav-principal ul li a {
 	color: rgb(107, 93, 93);
 	transition: background-color 0.4s;
 }
-#nav-principal li a:hover{
+#nav-principal li a:hover {
 	color: #8f2424;
 	cursor: pointer;
 } 
@@ -21,11 +21,11 @@ html, body #home{
 	margin-top: 80px;
 	
 }
-#home{
+#home {
     background: #ebebeb;
 	margin-top: 20px; 
 }
-.caixa{
+.caixa {
 	padding: 40px;
 	border-bottom: 4px solid #7a6767;
 }
@@ -46,7 +46,7 @@ html, body #home{
 	/* background: #584e4e; */
 	color: #ffffff; 
 }
-.parcela{
+.parcela {
 	color: #8f2424;
 	background-color: #dad8d8;
 	font-size: 12px;
@@ -57,11 +57,11 @@ html, body #home{
 	line-height: 40px;
 	text-decoration: none;
 }
-.parcela a{
+.parcela {
 	text-decoration: none;
 	cursor: pointer;
 }
-footer{
+footer {
 	background:#1f3c58; 
 	color: #ebebeb;
 	padding: 15px 0;
@@ -69,16 +69,16 @@ footer{
 	font-weight: 100;
 	width: 100%;
 }
- h2, h3, h4, h5{
+ h2, h3, h4, h5 {
 	/* font-weight: 500; */
 	/* margin: 15px 0 10px 0; */
 	color: #8f2424;
 }
-p{
+p {
 	text-align: justify;
 	text-indent: 0px;
 }
-input.btn{
+input.btn {
 	/* background: #1f3c58; */
 	padding: 5px 15px;
 	border-radius: 5px;
@@ -88,26 +88,26 @@ input.btn{
 	display: inline-block;
 	border: none;
 }
-input.btn:hover{
+input.btn:hover {
 	/* background: #315e8a; */
 	text-decoration: none;
 }
 
-#links a{
+#links a {
 	text-align: left;
 	text-decoration: none;
 	color: #ffffff;
 }
-.menu li{
+.menu li {
 	text-align: center;
 	color: #ee3c05;
 	margin-bottom: 100px;
 	
 }
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next, .carousel-control-prev {
 	width: 5%;
 }
-#top-link{
+#top-link {
 	position: fixed;
 	right: 35px;
 	text-align: center;
@@ -130,7 +130,7 @@ input.btn:hover{
 }
  /* Extra small devices (portrait phones, less than 576px)
  No media query since this is the default in Bootstrap */
-@media (min-width:575px){
+@media (min-width:575px) {
 	h1{
 		font-size: 2em;
 	}
