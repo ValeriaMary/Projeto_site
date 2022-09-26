@@ -1,3 +1,4 @@
+/* Página de estilo do site */
 html, body #home {
  height: 100% 
 }
@@ -27,7 +28,7 @@ html, body #home {
 }
 .caixa {
 	padding: 40px;
-	border-bottom: 4px solid #7a6767;
+	/* border-bottom: 4px solid #7a6767; */
 }
 .btn-custom {
 	color: rgb(85, 35, 35); 
@@ -116,7 +117,8 @@ input.btn:hover {
 	font-weight: bold;
 	text-decoration: none;
 	border-radius: 100%;
-	background: #8f2424;
+	background: #7a6767;
+	/* background: #8f2424; */
 	width: 40px;
 	height: 40px;
 	padding: 0px 6px 6px;
