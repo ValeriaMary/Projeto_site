@@ -27,8 +27,8 @@ html, body #home {
 	margin-top: 20px; 
 }
 .caixa {
-	padding: 40px;
-	/* border-bottom: 4px solid #7a6767; */
+	padding: 50px;
+	/* border-bottom: 4px solid #7a6767;  */
 }
 .btn-custom {
 	color: rgb(85, 35, 35); 
@@ -77,8 +77,8 @@ footer {
 }
 h2 {
 	text-align: center;
-	border-top: 50px;
-	font-size: 2.0rem;
+	font-size: 2.5rem;
+
 }
 p {
 	text-align: justify;
